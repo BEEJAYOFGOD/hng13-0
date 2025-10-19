@@ -2,6 +2,7 @@
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     transition: all 0.3s;
+    box-sizing: border-box;
 }
 html, body{
     padding: 0px;
@@ -64,6 +65,7 @@ ul#links {
     /* max-width: 100%; */
     gap: 1em;
     width: 100%;
+    border: 1px solid
 }
 
 ul#links li {
@@ -81,7 +83,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 1em 1.8em;
+    padding: 1em 0em;
 }
 
 a:focus {

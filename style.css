@@ -1,0 +1,215 @@
+* {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s;
+}
+/* mobile view */
+article {
+    text-align: center;
+}
+
+header {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+body {
+    background: #040111;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    /* border: 2px solid red; */
+}
+
+figure {
+    text-align: center;
+    /* border: 1px solid; */
+    width: 300px;
+    height: 300px;
+    border: 1xp solid;
+}
+
+figcaption {
+    font-size: 2em;
+}
+
+p#desc {
+    max-width: 1260px;
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#links {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    max-width: 100%;
+    gap: 1em;
+}
+
+ul#links li {
+    flex: 1;
+
+    border-radius: 14px;
+    /* padding: 1em 1.2em; */
+}
+
+a {
+    border: 1px solid rgba(245, 222, 179, 0.236);
+    animation: skeletonBorder 1.5s ease-in-out infinite alternate-reverse;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1em 1.8em;
+}
+
+a:focus {
+    outline: 1px solid whitesmoke;
+}
+
+a:hover {
+    border: 1px solid wheat;
+}
+
+a:hover .svg-container {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.svg-container {
+    background: rgb(4, 32, 70);
+    max-width: fit-content;
+    margin: 0 auto;
+    border-radius: 100%;
+    padding: 1em 1em;
+    width: 40px;
+    height: 40px;
+}
+svg {
+    width: 40px;
+    height: 40px;
+}
+
+.name {
+    text-align: center;
+}
+
+h2,
+h3 {
+    text-align: left;
+    font-size: 12px;
+}
+
+ul {
+    display: flex;
+    gap: 1em;
+}
+
+ul#hobbies li {
+    padding: 0.5em 1em;
+    background: rgb(4, 32, 70);
+    border-radius: 6px;
+}
+
+ul#dislikes {
+    padding: 0;
+    padding-left: 12px;
+    /* border: 1px solid white; */
+    color: gray;
+}
+
+@keyframes skeletonBorder {
+    0% {
+        border-color: white;
+    }
+    100% {
+        border-color: rgba(245, 222, 179, 0.236);
+    }
+}
+
+@media (min-width: 768px) {
+    /* styles */
+    #cred-section {
+        border: 1px solid whitesmoke;
+        display: flex;
+        padding: 1.2em;
+        border-radius: 18px;
+        margin-top: 1em;
+    }
+    p#desc {
+        width: 90%;
+        text-wrap: wrap;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    a {
+        padding: 0em 0em;
+        animation: none;
+        border: none;
+    }
+    a > span {
+        display: none;
+    }
+    .svg-container {
+        padding: 0.8em 0.8em;
+        border-radius: 18px;
+        aspect-ratio: square;
+        height: auto;
+    }
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+    ul#links li {
+        flex: 0;
+
+        border-radius: 14px;
+        /* padding: 1em 1.2em; */
+    }
+
+    .right-sec {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .right-sec p {
+        text-align: left;
+    }
+    .socials {
+        text-align: center;
+    }
+    .name {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .bottom-section {
+        margin-top: 1em;
+        border: 1px solid;
+        padding: 1em 1.5em;
+        border-radius: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* styles */
+}

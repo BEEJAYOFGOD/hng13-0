@@ -3,6 +3,11 @@
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     transition: all 0.3s;
 }
+html, body{
+    padding: 0px;
+    margin: 0px,
+}
+
 /* mobile view */
 article {
     text-align: center;
@@ -26,15 +31,13 @@ img {
     height: 100%;
     border-radius: 14px;
     object-fit: cover;
-    /* border: 2px solid red; */
 }
 
 figure {
     text-align: center;
-    /* border: 1px solid; */
     width: 300px;
     height: 300px;
-    border: 1xp solid;
+    margin: 0 auto;
 }
 
 figcaption {
@@ -98,8 +101,7 @@ a:hover .svg-container {
     margin: 0 auto;
     border-radius: 100%;
     padding: 1em 1em;
-    width: 40px;
-    height: 40px;
+
 }
 svg {
     width: 40px;
@@ -143,6 +145,8 @@ ul#dislikes {
     }
 }
 
+
+
 @media (min-width: 768px) {
     /* styles */
     #cred-section {
@@ -151,6 +155,8 @@ ul#dislikes {
         padding: 1.2em;
         border-radius: 18px;
         margin-top: 1em;
+        border: 1px solid white;
+        gap: 1.5em;
     }
     p#desc {
         width: 90%;
@@ -172,6 +178,7 @@ ul#dislikes {
         border-radius: 18px;
         aspect-ratio: square;
         height: auto;
+
     }
     svg {
         width: 24px;

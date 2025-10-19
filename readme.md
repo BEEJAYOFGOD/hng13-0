@@ -9,7 +9,7 @@ View the deployed project: [https://your-project-name.netlify.app/](https://your
 ## 📸 Preview
 
 ![Profile Card Screenshot](screenshot.png)
-_Add a screenshot of your profile card here_
+
 
 ## 🚀 Key Features
 
@@ -36,7 +36,7 @@ profile-card/
 ├── script.js           # JavaScript for dynamic features
 ├── bigJesus.png        # Profile avatar image
 ├── README.md           # Project documentation
-└── screenshot.png      # Preview image (optional)
+└── screenshot.png      # Preview image
 ```
 
 ## ⚙️ Local Development Setup

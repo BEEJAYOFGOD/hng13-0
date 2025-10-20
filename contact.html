@@ -5,8 +5,106 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CONTACT BEEJAYOFGOD</title>
         <link rel="stylesheet" href="./css/contact.css" />
+        <link rel="stylesheet" href="./css/navbar.css">
     </head>
     <body>
-        <main></main>
+
+          <nav class="navbar">
+                <div class="header-with-hamburger">
+                <h1>BEEJAYOFGOD</h1>
+                 <div id="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ededed" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                </div>
+                </div>
+
+
+
+                <div>
+                <ul id="navlink-container">
+                    <li><a href="/" class="active">HOME</a></li>
+
+                    <li><a class="navlinks" href="About.html">ABOUT ME</a></li>
+                    <li><a class="navlinks" href="contact.html">CONTACT</a></li>
+                </ul>
+                </div>
+
+
+
+            </nav>
+        <main>
+            <div class="form-group">
+                <label for="fullname">
+                    Full Name <span aria-label="required">*</span>
+                </label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    data-testid="test-contact-name"
+                    placeholder="Enter your full name"
+                    aria-required="true"
+                    aria-describedby="error-name"
+                    required
+                >
+                <span class="error-message" id="error-name" data-testid="test-contact-error-name" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">
+                    Email <span aria-label="required">*</span>
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    data-testid="test-contact-email"
+                    placeholder="name@example.com"
+                    aria-required="true"
+                    aria-describedby="error-email"
+                    required
+                >
+                <span class="error-message" id="error-email" data-testid="test-contact-error-email" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">
+                    Subject <span aria-label="required">*</span>
+                </label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    data-testid="test-contact-subject"
+                    placeholder="What is this about?"
+                    aria-required="true"
+                    aria-describedby="error-subject"
+                    required
+                >
+                <span class="error-message" id="error-subject" data-testid="test-contact-error-subject" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">
+                    Message <span aria-label="required">*</span>
+                </label>
+                <textarea
+                    id="message"
+                    name="message"
+                    data-testid="test-contact-message"
+                    placeholder="Write your message here (at least 10 characters)"
+                    aria-required="true"
+                    aria-describedby="error-message"
+                    required
+                    minlength="10"
+                ></textarea>
+                <span class="error-message" id="error-message" data-testid="test-contact-error-message" role="alert"></span>
+            </div>
+
+            <button type="submit" data-testid="test-contact-submit">
+                Send Message
+            </button>
+        </form>
+        </main>
+        <script src="./src/activeLink.js"></script>
     </body>
 </html>

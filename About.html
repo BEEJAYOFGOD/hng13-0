@@ -9,7 +9,7 @@
     </head>
     <body>
         <nav class="navbar">
-            <div class="header-ham">
+            <div class="header-with-hamburger">
                 <h1>BEEJAYOFGOD</h1>
                 <div id="hamburger">
                     <svg
@@ -40,8 +40,8 @@
         </nav>
 
         <main data-testid="test-about-page">
-            <section>
-                <div><h1>Bio</h1></div>
+            <section data-testid="test-about-bio">
+                <div><h1 class="section-header">Bio</h1></div>
 
                 <p>
                     My name is Omobolaji, a passionate frontend developer and
@@ -52,8 +52,8 @@
                     accessible.
                 </p>
             </section>
-            <section>
-                <div><h1>Goals</h1></div>
+            <section data-testid="test-about-goals">
+                <div><h1 class="section-header">Goals</h1></div>
 
                 <p>
                     My name is Omobolaji, a passionate frontend developer and
@@ -73,8 +73,8 @@
                     tempore repellendus numquam molestiae atque dolor.
                 </p>
             </section>
-            <section>
-                <div><h1>Areas of Low Confidence</h1></div>
+            <section data-testid="test-about-confidence">
+                <div><h1 class="section-header">Areas of Low Confidence</h1></div>
 
                 <p>
                     I sometimes struggle with debugging complex JavaScript logic
@@ -88,8 +88,8 @@
                 </p>
             </section>
 
-            <section>
-                <div><h2>Note to Future Self</h2></div>
+            <section data-testid="test-about-future-note">
+                <div><h2 class="section-header">Note to Future Self</h2></div>
 
                 <p>
                     Keep building, stay curious, and never stop refining your
@@ -101,6 +101,23 @@
                     deleniti. Sequi dolorum explicabo reiciendis eligendi.a
                 </p>
             </section>
+
+
+            <section data-testid="test-about-extra">
+                <div><h2 class="section-header">Extra thoughts</h2></div>
+
+                <p>
+                    Keep building, stay curious, and never stop refining your
+                    craft. Every little project is a step closer to mastery — so
+                    stay consistent, even when progress feels slow. Lorem ipsum
+                    dolor sit amet consectetur, adipisicing elit. Quos esse
+                    cumque veritatis nostrum iure natus hic, recusandae,
+                    necessitatibus dicta aperiam dolor veniam enim, ipsa
+                    deleniti. Sequi dolorum explicabo reiciendis eligendi.a
+                </p>
+            </section>
+
+
         </main>
         <script src="src/activeLink.js"></script>
     </body>

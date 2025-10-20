@@ -1,3 +1,5 @@
+/*NOTE: This is a mobile first approach */
+
 * {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -10,10 +12,11 @@ body {
     margin: 0px;
 }
 
-/* mobile view */
+
 article {
     text-align: center;
-    /* margin-top: 10em; */
+    margin-top: 4rem;
+
 }
 
 header {
@@ -24,10 +27,6 @@ header {
     font-size: 20px;
 }
 
-body {
-    background: #040111;
-    color: white;
-}
 
 img {
     width: 100%;
@@ -100,7 +99,7 @@ a:hover .svg-container {
     transition: all 0.3s;
 }
 .svg-container {
-    background: rgb(4, 32, 70);
+    background: var(--blue);
     max-width: fit-content;
     margin: 0 auto;
     border-radius: 100%;
@@ -158,6 +157,7 @@ ul#dislikes {
         margin-top: 1em;
         border: 1px solid white;
         gap: 1.5em;
+        background: var(--secondary-color);
     }
     p#desc {
         width: 90%;
@@ -214,6 +214,7 @@ ul#dislikes {
         border: 1px solid;
         padding: 1em 1.5em;
         border-radius: 14px;
+        background: var(--secondary-color);
     }
     article {
         max-width: 60%;

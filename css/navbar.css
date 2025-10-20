@@ -3,6 +3,18 @@ ul {
     padding: 0;
 }
 
+
+:root{
+    --secondary-color: hsl(230 15% 8% / 1);
+    --primary-color: hsl(230 10% 11% / 1);
+    --blue: rgb(3, 52, 100);
+}
+
+body{
+    background: var(--primary-color);
+    color: white
+}
+
 a {
     /* border: 1px solid rgba(245, 222, 179, 0.236); */
     /* animation: skeletonBorder 1.5s ease-in-out infinite alternate-reverse; */
@@ -22,7 +34,8 @@ a {
     padding: 0.5em;
     flex-direction: column-reverse;
 
-    background: #040111;
+    /* background: black; */
+    background: var(--primary-color);
     z-index: 1;
     position: sticky;
     top: 0;
@@ -32,9 +45,10 @@ a {
     filter: blur(blue);
     /* top: 24px; */
     width: 100%;
+    border-bottom: 1px solid white;
 }
 
-.header-ham {
+.header-with-hamburger {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,11 +71,12 @@ a {
 .navbar ul {
     display: flex;
     flex-direction: column;
+    animation: scale 0.1s ease-in-out ;
     /* border: 1px solid red; */
 }
 
 #navlink-container li a.active {
-    background: blue;
+    background: var(--blue);
     /* border-radius: 40px; */
     padding: 1em;
 }
@@ -80,6 +95,21 @@ a {
 
 #navlink-container.show {
     display: flex; /* visible when toggled */
+}
+
+
+.scale{
+    animation: scale 1.5s ease-in-out ;
+     /* animation: skeletonBorder 1.5s ease-in-out infinite alternate-reverse; */
+}
+
+@keyframes scale {
+    from{
+        transform: scaleY(0.5);
+    }
+    to{
+        transform: scaleY(1);
+    }
 }
 
 @media (min-width: 768px) {
@@ -105,11 +135,14 @@ a {
         align-items: center;
         padding: 0;
         flex-direction: row;
+         border-bottom: none;
     }
 
     .navbar ul {
         display: flex;
         flex-direction: row;
+        animation: none;
+        background: var(--secondary-color);
     }
     .navbar #hamburger {
         display: none;
@@ -137,7 +170,7 @@ a {
     }
 
     #navlink-container li a.active {
-        background: blue;
+        background: var(--blue);
         border-radius: 40px;
     }
     #navlink-container li a.active:hover {

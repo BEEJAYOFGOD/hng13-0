@@ -4,14 +4,16 @@
     transition: all 0.3s;
     box-sizing: border-box;
 }
-html, body{
+html,
+body {
     padding: 0px;
-    margin: 0px,
+    margin: 0px;
 }
 
 /* mobile view */
 article {
     text-align: center;
+    /* margin-top: 10em; */
 }
 
 header {
@@ -65,7 +67,6 @@ ul#links {
     /* max-width: 100%; */
     gap: 1em;
     width: 100%;
-    border: 1px solid
 }
 
 ul#links li {
@@ -104,7 +105,6 @@ a:hover .svg-container {
     margin: 0 auto;
     border-radius: 100%;
     padding: 1em 1em;
-
 }
 svg {
     width: 40px;
@@ -148,8 +148,6 @@ ul#dislikes {
     }
 }
 
-
-
 @media (min-width: 768px) {
     /* styles */
     #cred-section {
@@ -181,7 +179,6 @@ ul#dislikes {
         border-radius: 18px;
         aspect-ratio: square;
         height: auto;
-
     }
     svg {
         width: 24px;
@@ -217,6 +214,10 @@ ul#dislikes {
         border: 1px solid;
         padding: 1em 1.5em;
         border-radius: 14px;
+    }
+    article {
+        max-width: 60%;
+        margin: 0 auto;
     }
 }
 

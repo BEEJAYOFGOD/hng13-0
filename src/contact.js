@@ -116,7 +116,6 @@ const clearForm = () => {
 // ============================================
 // FIELD VALIDATION ORCHESTRATION
 // ============================================
-
 const validateField = (fieldId, validator, errorId) => {
     const field = document.getElementById(fieldId);
     const value = field ? field.value : "";
@@ -164,12 +163,15 @@ const handleSubmit = (event) => {
     if (isFormValid) {
         // console.log("amen");
         showSuccessMessage();
-        const existingSuccess = document.querySelector(
-            '[data-testid="test-contact-success"]'
-        );
+
         setTimeout(() => {
-            existingSuccess.remove();
-        }, 1000);
+            const existingSuccess = document.querySelector(
+                '[data-testid="test-contact-success"]'
+            );
+            if (existingSuccess) {
+                existingSuccess.remove();
+            }
+        }, 5000);
 
         clearForm();
 
@@ -194,7 +196,7 @@ const handleSubmit = (event) => {
 // ============================================
 
 const initializeFormValidation = () => {
-    const form = document.querySelector("main");
+    const form = document.getElementById("contact-form");
     const submitButton = document.querySelector(
         '[data-testid="test-contact-submit"]'
     );
@@ -226,20 +228,7 @@ const initializeFormValidation = () => {
     });
 
     // Attach submit handler
-    submitButton.addEventListener("click", handleSubmit);
-
-    // Prevent form submission on Enter key in input fields
-    fields.forEach(({ id }) => {
-        const field = document.getElementById(id);
-        if (field && field.tagName !== "TEXTAREA") {
-            field.addEventListener("keypress", (e) => {
-                if (e.key === "Enter") {
-                    e.preventDefault();
-                    submitButton.click();
-                }
-            });
-        }
-    });
+    form.addEventListener("submit", handleSubmit);
 };
 
 // ============================================

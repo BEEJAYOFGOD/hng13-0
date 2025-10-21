@@ -29,15 +29,15 @@
 
             <div>
                 <ul id="navlink-container">
-                    <li><a href="/" class="active">HOME</a></li>
+                    <li><a href="/" class="navlinks">HOME</a></li>
 
                     <li><a class="navlinks" href="About.html">ABOUT ME</a></li>
-                    <li><a class="navlinks" href="contact.html">CONTACT</a></li>
+                    <li><a class="navlinks active" href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
         <main>
-            <form action="">
+            <form id="contact-form" novalidate>
                 <div class="form-group">
                     <label for="fullname">
                         Full Name <span aria-label="required">*</span>
@@ -121,7 +121,7 @@
                     <span
                         class="error-message"
                         id="error-message"
-                        data-testid="test-contact-error-cmessage"
+                        data-testid="test-contact-error-message"
                         role="alert"
                     ></span>
                 </div>

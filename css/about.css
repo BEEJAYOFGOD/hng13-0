@@ -18,7 +18,7 @@ section {
 
 section div {
     position: absolute;
-    top: -1.8em;
+    top: -1.5em;
     /* border: 1px solid; */
     height: auto;
     /* background-color: #040111; */
@@ -70,16 +70,16 @@ main {
 
     section div {
         position: absolute;
-        top: -1.8em;
+        top: -1.5em;
         /* border: 1px solid; */
         height: auto;
         /* background-color: #040111; */
         padding: 0;
         display: flex;
     }
-    section div * {
+    section div h2 {
         background-color: var(--blue);
-        padding: 0.2em 0.5em;
+        padding: 0.5em 0.8em;
         border-radius: 12px;
     }
     section p {

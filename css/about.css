@@ -18,7 +18,7 @@ section {
 
 section div {
     position: absolute;
-    top: -2.5em;
+    top: -1.8em;
     /* border: 1px solid; */
     height: auto;
     /* background-color: #040111; */
@@ -26,23 +26,23 @@ section div {
     display: flex;
 }
 
-section div * {
+section div h2{
     border: 1px solid var(--gray);
     background-color: var(--blue);
     padding: 0.2em 0.5em;
-    font-size: 1.5em;
+    font-size: 1em;
     border-radius: 12px;
 }
 
 section p {
-    text-align: justify;
-    font-size: 1.5em;
+    text-align: left;
+    font-size: 1em;
 }
 
 section ul {
     list-style: disc;
     margin: 0 2em 2em;
-    font-size: 1.3em;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;

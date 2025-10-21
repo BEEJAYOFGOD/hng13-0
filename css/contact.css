@@ -148,6 +148,12 @@ button[type="submit"]:disabled {
     textarea {
         font-size: 0.95rem;
     }
+
+
+button[type="submit"]{
+    font-size: 0.8em;
+    padding: 1em 2em;
+}
 }
 
 @media (max-width: 480px) {

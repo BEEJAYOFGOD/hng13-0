@@ -10,7 +10,7 @@ body {
 section {
     position: relative;
     border: 1px solid var(--gray);
-    padding: 1em;
+    padding: 0.5em 1em;
     border-radius: 14px;
     margin: 4em 0;
     background: var(--secondary-color);
@@ -37,6 +37,7 @@ section div h2{
 section p {
     text-align: left;
     font-size: 1em;
+    /* border: 1px solid; */
 }
 
 section ul {

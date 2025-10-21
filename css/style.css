@@ -1,8 +1,6 @@
 /*NOTE: This is a mobile first approach */
 
 * {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     transition: all 0.3s;
     box-sizing: border-box;
 }

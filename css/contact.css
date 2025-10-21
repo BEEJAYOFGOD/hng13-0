@@ -1,19 +1,14 @@
 * {
     color: white;
+    box-sizing: border-box;
 }
+
 
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 
 
 main {
@@ -21,26 +16,25 @@ main {
     border-radius: 20px;
     padding: 2em;
     max-width: 50%;
-    margin: 8em auto 0;
+    margin: 4em auto;
     border: 0.5px solid var(--gray);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 1em;
 }
 
 label {
-    /* color: #333; */
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 label span {
@@ -97,9 +91,10 @@ textarea {
     padding: 16px;
     border-radius: 8px;
     border: 1px solid #c3e6cb;
-    display: none;
+    display: flex;
     text-align: center;
     font-weight: 500;
+    margin: 1em 0;
 }
 
 .success-message.show {
@@ -117,11 +112,14 @@ button[type="submit"] {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 10px;
+    width: fit-content;
+    margin-left: auto;
+    font-family: 'Quicksand';
 }
 
 button[type="submit"]:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    opacity: 0.5;
 }
 
 button[type="submit"]:active {
@@ -155,15 +153,6 @@ button[type="submit"]:disabled {
     body {
         padding: 10px;
     }
-
-    main {
-        /* padding: 25px 15px; */
-    }
-
-    /* h1 {
-                font-size: 1.3rem;
-                margin-bottom: 20px;
-            } */
 
     form {
         gap: 15px;

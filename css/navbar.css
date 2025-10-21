@@ -1,36 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 ul {
     list-style-type: none;
     padding: 0;
 }
 
-
-:root{
+:root {
     --secondary-color: hsl(230 15% 8% / 1);
     --primary-color: hsl(230 10% 11% / 1);
     --blue: rgb(3, 52, 100);
-    --gray: rgba(209, 207, 207, 0.224)
+    --gray: rgba(209, 207, 207, 0.224);
 }
 
-body{
+body {
     background: var(--primary-color);
     color: white;
 
-   font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
     min-height: 100vh;
-
-
 }
 
 a {
-    /* border: 1px solid rgba(245, 222, 179, 0.236); */
-    /* animation: skeletonBorder 1.5s ease-in-out infinite alternate-reverse; */
+
     text-decoration: none;
     color: white;
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding: 1em 0em;
+}
+
+.navbar h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar h1 a{
+    animation: none;
+    border: none;
+}
+
+.navbar h1 a:hover {
+    border: none;
 }
 
 .navbar {
@@ -53,7 +64,6 @@ a {
     /* top: 24px; */
     width: 100%;
     border-bottom: 1px solid white;
-
 }
 
 .header-with-hamburger {
@@ -79,7 +89,7 @@ a {
 .navbar ul {
     /* display: flex; */
     flex-direction: column;
-    animation: scale 0.1s ease-in-out ;
+    animation: scale 0.1s ease-in-out;
     /* border: 1px solid red; */
 }
 
@@ -99,32 +109,31 @@ a {
     display: none; /* hidden by default on mobile */
     flex-direction: column;
     gap: 1rem;
-
 }
 
 #navlink-container.show {
     display: flex; /* visible when toggled */
 }
 
-
-.scale{
-    animation: scale 1.5s ease-in-out ;
-     /* animation: skeletonBorder 1.5s ease-in-out infinite alternate-reverse; */
+.scale {
+    animation: scale 1.5s ease-in-out;
+    /* animation: skeletonBorder 1.5s ease-in-out infinite alternate-reverse; */
 }
 
 @keyframes scale {
-    from{
+    from {
         transform: scaleY(0.5);
     }
-    to{
+    to {
         transform: scaleY(1);
     }
 }
 
-@keyframes move{
+@keyframes move {
     from {
         transform: translateY(-100%);
-    }to {
+    }
+    to {
         transform: translateY(0%);
     }
 }
@@ -152,7 +161,7 @@ a {
         align-items: center;
         padding: 0;
         flex-direction: row;
-         border-bottom: none;
+        border-bottom: none;
     }
 
     .navbar ul {
@@ -167,7 +176,7 @@ a {
     }
 
     .navbar h1 {
-        font-size: 1.5em;
+        font-size: 2em;
         margin: 0;
         padding: 0;
     }

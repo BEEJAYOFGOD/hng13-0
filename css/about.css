@@ -7,6 +7,8 @@ body {
     box-sizing: border-box;
 }
 
+
+
 section {
     position: relative;
     border: 1px solid var(--gray);
@@ -34,12 +36,20 @@ section div * {
     border-radius: 12px;
 }
 
-/* main .section-header:nth-of-type(odd) {
-  border: 1px solid red;
-} */
+
 section p {
     text-align: justify;
     font-size: 1.5em;
+}
+
+
+section ul{
+    list-style: disc;
+    margin: 0 2em 2em;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 main {
